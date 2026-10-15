@@ -175,3 +175,6 @@ footer {
 .tooltip img {
     width: 100%;
 }
+.popup-overlay {
+    display: none;
+}
