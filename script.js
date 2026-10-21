@@ -11,6 +11,12 @@ closeBtn.addEventListener('click', () => {
     popup.classList.remove('show')
 })
 
+popup.addEventListener("click", (e) => {
+    console.log(e)
+    if (e.target.classList.contains("popup-overlay"))
+        popup.classList.remove('show')
+})
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     alert('Ваша заявка отправлена!')
